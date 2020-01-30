@@ -1,0 +1,67 @@
+/*
+ Theme Name:     Schema Lite Child
+ Description:    Child Theme for Schema Lite
+ Template:       schema-lite
+ Version:        0.0.1
+*/
+
+/* =Theme customization starts here*/
+
+#sidebars .sidebar.c-4-12 {
+     width: 29.5%;
+     max-width: 566px;
+}
+ 
+
+.article {
+    width: 68.5%;
+}
+
+
+#page, .container{
+    width:1315px;
+    max-width:98%;
+    min-width:240px;
+    overflow:visible;
+    margin:0 auto;
+    position:relative;
+}
+ .main-header .container{
+    max-width:100% 
+}
+
+
+@media screen and (max-width:960px){
+     .article{
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+     .sclayout article .alignfull, .cslayout article .alignfull, .sclayout article .wp-block-gallery.alignfull, .cslayout article .wp-block-gallery.alignfull{
+        margin-left:calc( -100vw / 2 + 100% / 2 )!important;
+        margin-right:calc( -100vw / 2 + 100% / 2 )!important;
+        width:auto!important;
+    }
+     .sclayout article .alignwide, .cslayout article .alignwide, .sclayout article .wp-block-gallery.alignwide, .cslayout article .wp-block-gallery.alignwide{
+        margin-left:calc( -100vw / 2 + 100% / 2 )!important;
+        margin-right:calc( -100vw / 2 + 100% / 2 )!important;
+        max-width:100vw!important;
+        width:auto!important;
+    }
+     .sidebar.c-4-12{
+        width:100%;
+        float:none!important;
+        margin-left:auto;
+        margin-right:auto;
+        overflow:hidden;
+    }
+     .pagination{
+        margin-bottom:0 
+    }
+     .sidebar.c-4-12 .sidebar_list{
+        margin-top:30px 
+    }
+     #page{
+        padding-top:25px 
+    }
+}
